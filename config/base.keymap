@@ -60,13 +60,13 @@
 &kp CAPSLOCK  &kp A          &kp S          &kp D           &kp F       &kp G                             &kp H      &kp J      &kp K      &kp L         &kp SEMICOLON  &kp SQT
 &kp LSHFT     &kp Z          &kp X          &kp C           &kp V       &kp B                             &kp N      &kp M      &kp COMMA  &kp DOT       &kp FSLH       &kp RSHIFT
                              &kp GRAVE      &kp BACKSLASH                                                                       &kp LBKT   &kp RBKT
-                                                            &kp BACKSPACE   &kp LCTRL   &kp LALT          &mkp MCLK  &mkp LCLK  &kp SPACE 
-                                                                            &mo 1       &kp LGUI          &kp ENTER  &mkp RCLK
+                                                            &kp LCTRL   &mkp LCLK   &kp ALT          &mkp RCLK  &mkp MCLK  &kp SPACE 
+                                                                        &mo 1       &kp LGUI         &kp ENTER  &kp BACKSPACE
                                             
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; 
         };
+
 
         layer_1 {
             bindings = <
