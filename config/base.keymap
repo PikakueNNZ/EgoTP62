@@ -60,8 +60,8 @@
 &kp CAPSLOCK  &kp A          &kp S          &kp D           &kp F       &kp G                             &kp H      &kp J      &kp K      &kp L         &kp SEMICOLON  &kp SQT
 &kp LSHFT     &kp Z          &kp X          &kp C           &kp V       &kp B                             &kp N      &kp M      &kp COMMA  &kp DOT       &kp FSLH       &kp RSHIFT
                              &kp GRAVE      &kp BACKSLASH                                                                       &kp LBKT   &kp RBKT
-                                                            &kp BACKSPACE   &kp LCTRL   &kp LALT          &kp RALT   &kp RCTRL  &kp SPACE 
-                                                                           &mo 1       &kp LGUI          &kp ENTER   &mo 1
+                                                            &kp BACKSPACE   &kp LCTRL   &kp LALT          &mkp MCLK  &mkp LCLK  &kp SPACE 
+                                                                            &mo 1       &kp LGUI          &kp ENTER  &mkp RCLK
                                             
             >;
 
