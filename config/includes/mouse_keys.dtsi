@@ -6,7 +6,7 @@
 
 // Below are settings and behavior defines for mouse keys.
 &mmv {
-  acceleration-exponent = <1>;      // Default: 1
+  acceleration-exponent = <10>;      // Default: 1
   time-to-max-speed-ms = <300>;    // Default: 300
 };
 
