@@ -86,12 +86,12 @@
     // increase battery life and potentially errors in transmissions.
     //
     // These values are allowed: 10,20,40,60,80,100,200
-    // sampling-rate = <200>;
+    sampling-rate = <200>;
 
 
     // Enable clicking by tapping on the TP. Not all TPs support this.
-    // tp-press-to-select;
-    // tp-press-to-select-threshold = <4>;
+    tp-press-to-select;
+    tp-press-to-select-threshold = <4>;
 
 
     // How sensitive the TP is (Default: 128)
@@ -103,7 +103,7 @@
 
 
     // Not quite sure what it does tbh :) (Default: 6)
-    tp-neg-inertia = <6>;
+    tp-neg-inertia = <4>;
 
 
     // Adjusts axis settings on the TP
