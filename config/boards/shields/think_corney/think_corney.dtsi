@@ -183,7 +183,7 @@
 	// 1 / BAUD * 1000000 = CYCLE_LEN (in microseconds)
 	// 1 / 14400 * 1000000 = 69.44
 	//
-	current-speed = <14400>;
+	current-speed = <19200>;
 	pinctrl-0 = <&uart0_ps2_default>;
 	pinctrl-1 = <&uart0_ps2_off>;
 
