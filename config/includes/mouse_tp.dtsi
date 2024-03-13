@@ -91,7 +91,7 @@
 
     // Enable clicking by tapping on the TP. Not all TPs support this.
     tp-press-to-select;
-    tp-press-to-select-threshold = <10>;
+    tp-press-to-select-threshold = <6>;
 
 
     // How sensitive the TP is (Default: 128)
@@ -103,7 +103,7 @@
 
 
     // Not quite sure what it does tbh :) (Default: 6)
-    tp-neg-inertia = <0>;
+    tp-neg-inertia = <5>;
 
 
     // Adjusts axis settings on the TP
