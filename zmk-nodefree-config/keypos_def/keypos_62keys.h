@@ -62,12 +62,12 @@
 #define LB4 37
 #define LB5 36
 
-#define RB0 44  // right-bottom row
-#define RB1 45
-#define RB2 46
-#define RB3 47
-#define RB4 48
-#define RB5 49
+#define RB0 42  // right-bottom row
+#define RB1 43
+#define RB2 44
+#define RB3 45
+#define RB4 46
+#define RB5 47
 
 #define LF0 49  // left-floor row
 #define LF1 48
