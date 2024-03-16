@@ -228,9 +228,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH0 RH3>;
-      layers = <BASE NAV NAV_WORD>;
+      layers = <BASE NUM MOUSE_TP>;
       bindings = <&tog MOUSE_TP>;
-
     };
 #endif
 
