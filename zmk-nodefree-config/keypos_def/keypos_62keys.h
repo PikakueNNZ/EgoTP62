@@ -78,8 +78,8 @@
 #define LH0 54  // left thumb keys
 #define LH1 53
 #define LH2 52
-#define LH3 58
-#define LH4 59
+#define LH3 59
+#define LH4 58
 
 #define RH0 55  // right thumb keys
 #define RH1 56
