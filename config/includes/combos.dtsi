@@ -219,8 +219,8 @@
     combo_tog_mouse_settings_r {
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-      key-positions = <RT2 RT3 RT4>;
-      layers = <BASE NAV NAV_WORD MOUSE_KEYS>;
+      key-positions = <LH1 LH4>;
+      layers = <BASE MOUSE_TP SET>;
       bindings = <&tog SET>;
     };
 
@@ -228,7 +228,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH0 RH3>;
-      layers = <BASE NUM MOUSE_TP>;
+      // layers = <BASE MOUSE_TP>;
       bindings = <&tog MOUSE_TP>;
     };
 #endif
