@@ -213,7 +213,7 @@
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT2 LT3 LT4>;
       layers = <BASE NAV NAV_WORD MOUSE_KEYS>;
-      bindings = <&tog SET>;
+      bindings = <&tog MOUSE_SET>;
     };
 
     combo_tog_mouse_settings_r {
@@ -221,9 +221,20 @@
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RT2 RT3 RT4>;
       layers = <BASE NAV NAV_WORD MOUSE_KEYS>;
-      bindings = <&tog SET>;
+      bindings = <&tog MOUSE_SET>;
+    };
+
+    combo_tog_mouse {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RH0 RH3>;
+      layers = <BASE NAV NAV_WORD>;
+      bindings = <&tog MOUSE_TP>;
+
     };
 #endif
+
+
 
 #ifdef HAS_MOUSE_KEYS
     combo_tog_mouse_keys_l {
