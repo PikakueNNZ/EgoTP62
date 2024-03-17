@@ -11,7 +11,7 @@
 / {
     macros {
 
-        lm: lm{
+        my_mo: my_momentary_layer{
             compatible = "zmk,behavior-macro-two-param";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -28,6 +28,21 @@
                 , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
+
+        my_tog:my_layer_toggle{
+            compatible = "zmk,behavior-macro-two-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&tog MACRO_PLACEHOLDER>
+                , <&macro_param_2to1>
+                , <&kt MACRO_PLACEHOLDER>
+                ;
+        }
+
+
 
         m_type_email_p: type_email_p {
             compatible = "zmk,behavior-macro";

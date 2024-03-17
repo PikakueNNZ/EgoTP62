@@ -86,7 +86,7 @@
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LH1 LH4>;
       layers = <BASE MOUSE_TP SET>;
-      bindings = <&tog SET>;
+      bindings = <&my_tog SET SET_K>;
     };
 
     combo_tog_mouse_settings_r {
@@ -94,7 +94,7 @@
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH1 RH4>;
       layers = <BASE MOUSE_TP SET>;
-      bindings = <&tog SET>;
+      bindings = <&my_tog SET SET_K>;
     };
 
     combo_tog_mouse {
@@ -102,7 +102,7 @@
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH0 RH3>;
       // layers = <BASE MOUSE_TP>;
-      bindings = <&tog MOUSE_TP>;
+      bindings = <&my_tog MOUSE_TP MOUSE_TP_K>;
     };
 #endif
 
