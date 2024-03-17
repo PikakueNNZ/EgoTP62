@@ -40,7 +40,7 @@
                 , <&macro_param_2to1>
                 , <&kt MACRO_PLACEHOLDER>
                 ;
-        }
+        };
 
 
 
