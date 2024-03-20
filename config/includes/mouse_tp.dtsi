@@ -1,4 +1,4 @@
-#ifdef HAS_MOUSE_TP
+#ifdef HAS_TP
   #include <dt-bindings/zmk/mouse_settings.h>
   #include <behaviors/mouse_setting.dtsi>
 
@@ -128,7 +128,7 @@
 
     // Set the layer that should automatically activate when the mouse is
     // moving.
-    // layer-toggle = <MOUSE_TP>;
+    // layer-toggle = <TP>;
 
     // How long the mouse needs to move for before the layer is activated (to
     // avoid accidental activations while typing) (Default: 250)

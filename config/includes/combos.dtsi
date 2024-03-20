@@ -80,12 +80,46 @@
 //
   //  };
 
-#ifdef HAS_MOUSE_TP
+  combo_bootloader_l {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    key-positions = <LM5 LB5>;
+   
+    bindings = <&bootloader>;
+  };
+
+  combo_bootloader_r {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    key-positions = <RM5 RB5>;
+   
+    bindings = <&bootloader>;
+  };
+
+
+  combo_reset_l {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    key-positions = <LM4 LB4>;
+   
+    bindings = <&sys_reset>;
+  };
+
+  combo_reset_r {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    key-positions = <RM4 RB4>;
+   
+    bindings = <&sys_reset>;
+  };
+
+
+#ifdef HAS_TP
     combo_tog_mouse_settings_l {
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LH1 LH4>;
-      layers = <BASE MOUSE_TP SET>;
+      layers = <BASE TP SET>;
       bindings = <&my_tog SET SET_K>;
     };
 
@@ -93,7 +127,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH1 RH4>;
-      layers = <BASE MOUSE_TP SET>;
+      layers = <BASE TP SET>;
       bindings = <&my_tog SET SET_K>;
     };
 
@@ -101,8 +135,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RH0 RH3>;
-      // layers = <BASE MOUSE_TP>;
-      bindings = <&my_tog MOUSE_TP MOUSE_TP_K>;
+      // layers = <BASE TP>;
+      bindings = <&my_tog TP TP_K>;
     };
 #endif
 
