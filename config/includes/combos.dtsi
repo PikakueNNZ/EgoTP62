@@ -80,15 +80,8 @@
 //
   //  };
 
-  combo_bootloader_l {
-    timeout-ms = <COMBO_TERM_SLOW>;
-    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-    key-positions = <LM5 LB5>;
-   
-    bindings = <&bootloader>;
-  };
 
-  combo_bootloader_r {
+  combo_bootloader {
     timeout-ms = <COMBO_TERM_SLOW>;
     require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
     key-positions = <RM5 RB5>;
@@ -97,15 +90,8 @@
   };
 
 
-  combo_reset_l {
-    timeout-ms = <COMBO_TERM_SLOW>;
-    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-    key-positions = <LM4 LB4>;
-   
-    bindings = <&sys_reset>;
-  };
 
-  combo_reset_r {
+  combo_reset {
     timeout-ms = <COMBO_TERM_SLOW>;
     require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
     key-positions = <RM4 RB4>;
