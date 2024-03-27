@@ -95,11 +95,11 @@
 
 
     // How sensitive the TP is (Default: 128)
-    tp-sensitivity = <115>;
+    tp-sensitivity = <100>;
 
 
     // The maximum mouse movement speed the TP will accelarate to (Default: 97)
-    tp-val6-upper-speed = <182>;
+    tp-val6-upper-speed = <255>;
 
 
     // Not quite sure what it does tbh :) (Default: 6)
@@ -112,7 +112,7 @@
     // impact). Alternatively consider achieving the same effect using the
     //  `zmk,input-configs` feature.
     // tp-xy-swap;
-    // tp-x-invert;
+    tp-x-invert;
     // tp-y-invert;
 
   };
@@ -123,7 +123,7 @@
 
   &mouse_ps2_input_listener {
     // xy-swap;
-    x-invert;
+    // x-invert;
     // y-invert;
 
     // Set the layer that should automatically activate when the mouse is
