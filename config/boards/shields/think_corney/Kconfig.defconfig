@@ -8,6 +8,13 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config ZMK_MOUSE
+    bool "Enable ZMK mouse emulation"
+    default y
+
+config ZMK_MOUSE_TICK_DURATION
+    default 1
+
 endif
 
 
@@ -19,13 +26,8 @@ config ZMK_SPLIT
 
 endif
 
-config ZMK_MOUSE
-    bool "Enable ZMK mouse emulation"
-    default y
 
-config ZMK_MOUSE_TICK_DURATION
-    int "Mouse tick duration in ms"
-    default 8
+
 
 if ZMK_MOUSE
 
@@ -49,7 +51,7 @@ config ZMK_MOUSE_DEDICATED_THREAD_STACK_SIZE
 
 config ZMK_MOUSE_DEDICATED_THREAD_PRIORITY
     int "Thread priority for dedicated mouse thread/queue"
-    default 3
+    default 1
 
 endif # ZMK_MOUSE_WORK_QUEUE_DEDICATED
 
