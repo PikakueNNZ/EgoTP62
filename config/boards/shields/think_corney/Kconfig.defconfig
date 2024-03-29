@@ -11,8 +11,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_MOUSE
     bool "Enable ZMK mouse emulation"
     default y
-
+	
 config ZMK_MOUSE_TICK_DURATION
+    int "Mouse tick duration in ms"
     default 1
 
 endif
@@ -25,6 +26,7 @@ config ZMK_SPLIT
 	default y
 
 endif
+
 
 
 
