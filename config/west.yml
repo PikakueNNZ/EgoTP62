@@ -4,11 +4,11 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: infused-kim
-      url-base: https://github.com/infused-kim
+    - name: PikakueNNZ
+      url-base: https://github.com/PikakueNNZ
   projects:
     - name: zmk
-      remote: infused-kim
+      remote: PikakueNNZ
       revision: pr-testing/mouse_ps2_v2
       import: app/west.yml
   self:
