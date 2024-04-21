@@ -38,7 +38,8 @@
 
 // Personal includes
 #ifdef HAS_MOUSE_KEYS
-     #include "includes/mouse_keys.dtsi"
+  #include <dt-bindings/zmk/mouse.h>
+  #include <behaviors/mouse_keys.dtsi>
 #endif
 
 #ifdef HAS_TP
@@ -54,6 +55,20 @@
 #include "includes/behaviours_homerow_mods.dtsi"
 #include "includes/behaviours_mod_morph.dtsi"
 #include "includes/behaviours_other.dtsi"
+
+
+#ifdef HAS_MOUSE_TP
+  #define U_TOG_TP_SET &tog MOUSE_TP_SET
+#else
+  #define U_TOG_TP_SET &none
+#endif  // HAS_MOUSE_TP
+
+
+#ifdef HAS_MOUSE_TP
+  #define U_TOG_TP_SET &tog MOUSE_TP_SET
+#else
+  #define U_TOG_TP_SET &none
+#endif  // HAS_MOUSE_TP
 
 
 / {
