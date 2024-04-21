@@ -37,14 +37,14 @@
 
 
 // Personal includes
-// #ifdef HAS_MOUSE_KEYS
+#ifdef HAS_MOUSE_KEYS
   #include <dt-bindings/zmk/mouse.h>
   #include <behaviors/mouse_keys.dtsi>
-// #endif
+#endif
 
-// #ifdef HAS_MOUSE_TP
+#ifdef HAS_MOUSE_TP
      #include "includes/mouse_tp.dtsi"
-// #endif
+#endif
 
 #include "includes/custom_keycodes.dtsi"
 #include "includes/settings.dtsi"
