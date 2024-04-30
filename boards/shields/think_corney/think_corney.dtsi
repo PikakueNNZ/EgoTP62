@@ -48,9 +48,6 @@
 	};
 };
 
-/*
- * Nice!View
- */
 
 
 &pro_micro_i2c {
