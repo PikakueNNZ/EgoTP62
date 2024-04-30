@@ -201,6 +201,12 @@
 
 // Adjust GPIO interrupt priority to the highest level.
 //
+// IMPORTANT TLDR:
+// If you are using the nice_nano_v2 board, you don't need to make changes to
+// the config below and can leave it as it is.
+//
+// Explanation of these settings:
+//
 // PS/2 events must be processed within 30-50us, but frequently bluetooth and
 // other interrupts take longer to finish.
 //
