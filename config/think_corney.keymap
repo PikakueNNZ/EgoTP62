@@ -6,10 +6,14 @@
 #define KEYS_T LH4 LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3 RH4
 
 /* Enable keymap features that require forks or modules */
-#define HAS_UROB
+// #define HAS_UROB
+
+#define HAS_TRI_STATE
+// #define HAS_CAPSLOCK
+
 #define HAS_MOUSE_KEYS
 #define HAS_MOUSE_TP
-// #define HAS_CAPSLOCK
+// #define HAS_MOUSE_TP_BADJEFF_INPUT_LISTENER
 
 /* source the main keymap */
 #include "base.keymap"

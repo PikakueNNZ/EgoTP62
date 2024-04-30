@@ -28,6 +28,11 @@
 #define MOUSE_KEYS 11
 
 
+#ifdef HAS_UROB
+  #define HAS_TRI_STATE
+  #define HAS_NUM_WORD
+#endif
+
 // ZMK includes
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -38,15 +43,6 @@
 
 
 // Personal includes
-#ifdef HAS_MOUSE_KEYS
-  #include <dt-bindings/zmk/mouse.h>
-  #include <behaviors/mouse_keys.dtsi>
-#endif
-
-#ifdef HAS_MOUSE_TP
-     #include "includes/mouse_tp.dtsi"
-#endif
-
 #include "includes/custom_keycodes.dtsi"
 #include "includes/settings.dtsi"
 #include "includes/conditional_layers.dtsi"
@@ -55,7 +51,9 @@
 #include "includes/behaviours_homerow_mods.dtsi"
 #include "includes/behaviours_mod_morph.dtsi"
 #include "includes/behaviours_other.dtsi"
-
+#include "includes/mouse_keys.dtsi"
+#include "includes/mouse_tp.dtsi"
+#include "includes/mouse_tp_badjeff_input_listener.dtsi"
 
 
 
